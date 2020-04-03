@@ -54,8 +54,17 @@
         </v-col>
       </v-row>
     </v-card-text>
- 
-     <v-card-text class="pa-0">
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+        <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
           <p class="text--disabled text-center ma-0">Via ports</p>
@@ -113,6 +122,11 @@
         </v-col>
       </v-row>
     </v-card-text>
+       
+      </div>
+    </v-expand-transition>
+ 
+     
  
 
    
@@ -309,7 +323,9 @@
     data: () => ({
       loading: false,
       selection: 1,
+      show: false
     }),
+    
 
     methods: {
       reserve () {
