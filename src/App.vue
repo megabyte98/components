@@ -229,6 +229,75 @@
 
 </div>
 
+<!-- add rate card -->
+
+
+<div class="container d-flex ma-auto">
+  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450"> 
+     <v-system-bar class=" white pa-5">
+      <v-spacer><span class="blue pa-2">special Offer</span></v-spacer> 
+      <v-icon>mdi-pencil</v-icon>      
+       <v-icon>mdi-share-variant</v-icon>
+       <v-icon>mdi-delete</v-icon>
+    </v-system-bar>
+    <v-divider></v-divider>
+      <v-row>
+        <v-card-text class="text-center"><h2>Carrier Company with LOGO </h2></v-card-text>
+        <v-card-text class="text-center pa-0" ><p class="pa-0 ma-0">expires in <span class="red--text">x days</span></p></v-card-text>
+      </v-row>
+    <v-divider></v-divider>
+     
+     <v-card-text class="pa-0">
+      <v-row align="center">
+        <v-col  cols="6 pa-1">
+          <p class="text-center ma-0">Service</p>
+        </v-col>
+        <v-col cols="6 pa-1">
+          <p class=" text-center ma-0 font-weight-black">BTL Turclain Service</p>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    
+     <v-card-text class="pa-0">
+      <v-row align="center">
+        <v-col  cols="6 pa-1">
+          <p class=" text-center ma-0">Via <span class="font-weight-black">xyz port</span></p>
+        </v-col>
+        <v-col cols="6 pa-1">
+          <p class=" text-center ma-0">takes <span class="font-weight-black">x days</span></p>
+        </v-col>
+      </v-row>
+    </v-card-text>
+   
+ <v-card-text class="pa-0">
+      <v-row align="center">
+        <v-col  cols="6 pa-1">
+          <p class=" text-center ma-0">Next Sailing On</p>
+        </v-col>
+        <v-col cols="6 pa-1">
+          <p class="font-weight-black text-center ma-0">DD/MM/YYYY</p>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    <v-divider></v-divider>
+   <v-row class="text-center">
+    <v-card-text> <h1>$790</h1>
+     <p>landing cost per container</p>
+     <br>
+     <h2><v-btn class="blue--text">VIEW BREAKDOWN</v-btn></h2>
+    </v-card-text>
+   </v-row>
+   <v-divider></v-divider>
+      <v-card-actions>
+         <v-btn block tile color="green">
+        ADD TO QUOTE
+        </v-btn>
+        
+        </v-card-actions>
+  </v-card>
+
+</div>
+
   </v-app>
 </template>
 
