@@ -154,12 +154,13 @@
        <v-col  cols="6 pa-1">
           <p class=" text-center ma-0 ">Liner Name</p>
         </v-col>
-        <v-col cols="6 pa-1"> <v-expansion-panel >
-      <v-expansion-panel-header>Select Liner Name</v-expansion-panel-header>
-      <v-expansion-panel-content>
-        ........
-      </v-expansion-panel-content>
-    </v-expansion-panel>
+        <v-col cols="6 pa-2"><v-card-actions><v-select
+          :items="items"
+          label="Liner Name"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+      
         </v-col>
       </v-row>
     </v-card-text>
@@ -170,12 +171,12 @@
           <p class=" text-center ma-0 ">Expiry Date</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <v-expansion-panel >
-      <v-expansion-panel-header>Select Expiry Date</v-expansion-panel-header>
-      <v-expansion-panel-content>
-        ........
-      </v-expansion-panel-content>
-    </v-expansion-panel>
+         <v-card-actions><v-select
+          :items="items"
+          label="Expiry Date"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
         </v-col>
       </v-row>
     </v-card-text>
@@ -196,12 +197,12 @@
        <v-col  cols="6 pa-1">
           <p class=" text-center ma-0 ">Service Type</p>
         </v-col>
-        <v-col cols="6 pa-1"> <v-expansion-panel >
-      <v-expansion-panel-header>Select Service Type</v-expansion-panel-header>
-      <v-expansion-panel-content>
-        ........
-      </v-expansion-panel-content>
-    </v-expansion-panel>
+        <v-col cols="6 pa-1"> <v-card-actions><v-select
+          :items="items"
+          label="Service Type"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
         </v-col>
       </v-row>
     </v-card-text>
