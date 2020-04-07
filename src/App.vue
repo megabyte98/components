@@ -146,29 +146,46 @@
 
 
 <div class="container d-flex ma-auto">
-  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450"> 
+  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450" > 
         <v-card-title class="blue pa-2">Add New Rate</v-card-title>
        <v-divider ></v-divider>
        <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-1">
-          <p class=" text-center ma-0 ">Liner Name</p>
-        </v-col>
-        <v-col cols="6 pa-2"><v-card-actions><v-select
+       <v-col  cols="6 pa-2">
+        <v-card-actions><v-select
           :items="items"
           label="Liner Name"
           class="px-1"
         ></v-select>
         </v-card-actions>
-      
+       
+        </v-col>
+        <v-col cols="6 pa-2">
+       <v-card-actions><v-select
+          :items="items"
+          label="Sailing Date"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text>
+
+    <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="6 pa-6">
+          <v-text-field label="Port Of Loading"></v-text-field> 
+        </v-col>
+        <v-col cols="6 pa-6" align-center>
+         <v-text-field label="Port Of Discharge"></v-text-field> 
         </v-col>
       </v-row>
     </v-card-text>
 
      <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-1">
-          <p class=" text-center ma-0 ">Expiry Date</p>
+       <v-col  cols="6 pa-5">
+           <v-text-field label="Via Ports"></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1">
          <v-card-actions><v-select
@@ -182,11 +199,11 @@
     </v-card-text>
   <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-1">
-          <p class=" text-center ma-0 ">Rates By</p>
+       <v-col  cols="6 pa-5">
+        <v-text-field label="Demurrage" ></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1" align-center>
-         <v-text-field class="pr-5" ></v-text-field> 
+         <v-text-field class="pr-5" label="Rates By" ></v-text-field> 
         </v-col>
       </v-row>
     </v-card-text>
@@ -194,8 +211,8 @@
 
      <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-1">
-          <p class=" text-center ma-0 ">Service Type</p>
+       <v-col  cols="6 pa-5">
+         <v-text-field label="Detention Free"></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1"> <v-card-actions><v-select
           :items="items"
@@ -206,7 +223,8 @@
         </v-col>
       </v-row>
     </v-card-text>
-    
+     
+   
         <v-card-text class="pa-0">
       <v-row align="center">
        <v-col  cols="6 pa-1">
@@ -229,6 +247,7 @@
       </v-row>
     </v-card-text> 
      <v-divider></v-divider> 
+   
 
      <v-row class="d-flex justify-center">
       <v-card-actions>
