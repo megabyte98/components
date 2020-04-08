@@ -173,18 +173,29 @@
 
     <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-6">
+       <v-col  cols="6 px-6">
           <v-text-field label="Port Of Loading"></v-text-field> 
         </v-col>
-        <v-col cols="6 pa-6" align-center>
+        <v-col cols="6 px-6" align-center>
          <v-text-field label="Port Of Discharge"></v-text-field> 
         </v-col>
       </v-row>
     </v-card-text>
 
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+     <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
      <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-5">
+       <v-col  cols="6 px-5">
            <v-text-field label="Via Ports"></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1">
@@ -199,7 +210,7 @@
     </v-card-text>
   <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-5">
+       <v-col  cols="6 px-5">
         <v-text-field label="Demurrage" ></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1" align-center>
@@ -211,7 +222,7 @@
 
      <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-5">
+       <v-col  cols="6 px-5">
          <v-text-field label="Detention Free"></v-text-field> 
         </v-col>
         <v-col cols="6 pa-1"> <v-card-actions><v-select
@@ -247,6 +258,8 @@
       </v-row>
     </v-card-text> 
      <v-divider></v-divider> 
+     </div>
+    </v-expand-transition>
    
 
      <v-row class="d-flex justify-center">
