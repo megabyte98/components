@@ -143,16 +143,26 @@
   </div>
 
 <!-- add rate card -->
-
-
-<div class="container d-flex ma-auto">
-  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450" > 
+<div class="text-center">
+    <v-btn
+      color="blue"
+      dark
+      @click="sheet = !sheet"
+    >
+      ADD NEW RATE
+    </v-btn>
+    <v-bottom-sheet v-model="sheet">
+      <v-sheet class="text-center" >
+        <v-container class="fluid">
+        <div class=" d-flex ma-auto">
+  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="600" > 
         <v-card-title class="blue pa-2">Add New Rate</v-card-title>
        <v-divider ></v-divider>
        <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 pa-2">
-        <v-card-actions><v-select
+       <v-col  cols="4 pa-2">
+        <v-card-actions>
+          <v-select
           :items="items"
           label="Liner Name"
           class="px-1"
@@ -160,10 +170,17 @@
         </v-card-actions>
        
         </v-col>
-        <v-col cols="6 pa-2">
-       <v-card-actions><v-select
+        <v-col cols="4 pa-2">
+       <v-card-actions>
+         <v-text-field class="pr-5" label="Rates By" ></v-text-field>
+         
+        </v-card-actions>
+        </v-col>
+        <v-col cols="4 pa-1">
+           <v-card-actions>
+          <v-select
           :items="items"
-          label="Sailing Date"
+          label="Service Type"
           class="px-1"
         ></v-select>
         </v-card-actions>
@@ -173,11 +190,41 @@
 
     <v-card-text class="pa-0">
       <v-row align="center">
-       <v-col  cols="6 px-6">
+       <v-col  cols="4 px-6">
           <v-text-field label="Port Of Loading"></v-text-field> 
         </v-col>
-        <v-col cols="6 px-6" align-center>
+        <v-col cols="4 px-6" align-center>
          <v-text-field label="Port Of Discharge"></v-text-field> 
+        </v-col>
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+          <v-select
+          :items="items"
+          label="Sailing Date"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text>
+
+    
+    <v-card-text class="pa-0">
+      <v-row align="center">
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+          <v-select
+          :items="items"
+          label="Expiry Date"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+        </v-col>
+         <v-col  cols="4 px-6">
+          <v-text-field label="Detention Free"></v-text-field> 
+        </v-col>
+        <v-col cols="4 px-6" align-center>
+         <v-text-field label="Demurrage"></v-text-field> 
         </v-col>
       </v-row>
     </v-card-text>
@@ -192,57 +239,15 @@
      <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-
-     <v-card-text class="pa-0">
-      <v-row align="center">
-       <v-col  cols="6 px-5">
-           <v-text-field label="Via Ports"></v-text-field> 
-        </v-col>
-        <v-col cols="6 pa-1">
-         <v-card-actions><v-select
-          :items="items"
-          label="Expiry Date"
-          class="px-1"
-        ></v-select>
-        </v-card-actions>
-        </v-col>
-      </v-row>
-    </v-card-text>
-  <v-card-text class="pa-0">
-      <v-row align="center">
-       <v-col  cols="6 px-5">
-        <v-text-field label="Demurrage" ></v-text-field> 
-        </v-col>
-        <v-col cols="6 pa-1" align-center>
-         <v-text-field class="pr-5" label="Rates By" ></v-text-field> 
-        </v-col>
-      </v-row>
-    </v-card-text>
-
-
-     <v-card-text class="pa-0">
-      <v-row align="center">
-       <v-col  cols="6 px-5">
-         <v-text-field label="Detention Free"></v-text-field> 
-        </v-col>
-        <v-col cols="6 pa-1"> <v-card-actions><v-select
-          :items="items"
-          label="Service Type"
-          class="px-1"
-        ></v-select>
-        </v-card-actions>
-        </v-col>
-      </v-row>
-    </v-card-text>
-     
-   
         <v-card-text class="pa-0">
       <v-row align="center">
        <v-col  cols="6 pa-1">
           <p class=" text-center ma-0 ">CUSTOM RATES</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <v-card-actions class="d-flex justify-center"><v-btn raised class="fluid"  color="lime accent-2">Add Custom Rates</v-btn></v-card-actions>
+          <v-card-actions class="d-flex justify-center">
+            <v-btn raised class="fluid"  color="lime accent-2">Add Custom Rates</v-btn>
+            </v-card-actions>
         </v-col>
       </v-row>
     </v-card-text> 
@@ -253,7 +258,9 @@
           <p class=" text-center ma-0 ">SCHEDULE</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <v-card-actions class="d-flex justify-center"><v-btn raised class="fluid"  color="lime accent-2">Schedule</v-btn></v-card-actions>
+          <v-card-actions class="d-flex justify-center">
+            <v-btn raised class="fluid"  color="lime accent-2">Schedule</v-btn>
+            </v-card-actions>
         </v-col>
       </v-row>
     </v-card-text> 
@@ -275,6 +282,18 @@
   </v-card>
 
 </div>
+        </v-container>
+        <v-btn
+          class="mt-6"
+          text
+          color="red"
+          @click="sheet = !sheet"
+        >close</v-btn>
+      </v-sheet>
+    </v-bottom-sheet>
+  </div>
+
+
 
 <!-- add rate card -->
 
@@ -344,7 +363,7 @@
   </v-card>
 
 </div>
-
+  
   </v-app>
 </template>
 
@@ -356,7 +375,8 @@
     data: () => ({
       loading: false,
       selection: 1,
-      show: false
+      show: false,
+      sheet:false
     }),
     
 
