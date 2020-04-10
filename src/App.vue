@@ -10,57 +10,58 @@
     <v-divider></v-divider>
       <v-row>
         <v-card-text class="text-center"><h2>LOGO</h2></v-card-text>
-        <v-card-text class="text-center pa-0" ><p class="pa-0 ma-0">expires in <span class="red--text">x days</span></p></v-card-text>
+        <v-card-text class="text-center pa-0" ><p class="pa-0 ma-0">expires in <span class="red--text">{{item.expiryDate}}</span></p></v-card-text>
       </v-row>
     <v-divider></v-divider>
    <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Liner name</p>
+          <p class=" text-center ma-0">Liner name</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">XXXXX</p>
+          <p class=" text-center ma-0">{{item.liner}}</p>
         </v-col>
       </v-row>
     </v-card-text>
     <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Port of Loading</p>
-          <p class="text-center ma-0">XXXXX</p>
+          <p class=" text-center ma-0">Port of Loading</p>
+          <p class="text-center ma-0">{{item.originPort}}</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Port of Discharge</p>
-          <p class="text-center ma-0">XXXXX</p>
+          <p class=" text-center ma-0">Port of Discharge</p>
+          <p class="text-center ma-0">{{destinationPort}}</p>
         </v-col>
       </v-row>
     </v-card-text>
    <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Rates By</p>
+          <p class=" text-center ma-0">Rates By</p>
         </v-col>
         <v-col cols="6">
-          <p class="text--disabled text-center ma-0">xyz</p>
+          <p class=" text-center ma-0">{{item.ratesBy}}</p>
         </v-col>
       </v-row>
     </v-card-text>
      <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Service Type</p>
+          <p class=" text-center ma-0">Service Type</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">a,b,c</p>
+          <p class=" text-center ma-0">{{item.serviceType}}</p>
         </v-col>
       </v-row>
     </v-card-text>
+    <v-divider></v-divider>
     <v-card-actions>
        <v-card-text class="pa-3">
       <v-row align="center">
         <v-col  cols="6 pa-1" class="green yellow--text" >
           <p class="text-center ma-0"><strong>Profit</strong></p>
-          <p class="text-center ma-0">x$</p> 
+          <p class="text-center ma-0">{{item.totalProfit}}</p> 
         </v-col>
         <v-col cols="6 pa-1" class="red yellow--text">
           <p class="text-center ma-0 "><strong>FREIGHT COST</strong></p>
@@ -80,22 +81,22 @@
  <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Sailing Date</p>
+          <p class=" text-center ma-0">Sailing Date</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">DD/MM/YYYY</p>
+          <p class=" text-center ma-0">{{item.sailingDate}}</p>
         </v-col>
       </v-row>
     </v-card-text>
      <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1" >
-          <p class="text--disabled text-center ma-0">detention free</p>
-          <p class="text-center ma-0">in days</p>
+          <p class=" text-center ma-0">detention free</p>
+          <p class="text-center ma-0">{{item.detentionFree}}</p>
         </v-col>
         <v-col cols="6 pa-1">
           <p class="text-center ma-0">Vessel Name</p>
-          <p class="text-center ma-0">xyz</p>
+          <p class="text-center ma-0">x,y,z</p>
         </v-col>
       </v-row>
     </v-card-text>
@@ -103,11 +104,10 @@
   <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Demurrage</p>
-          <p class="text-center ma-0">in days</p>
+          <p class=" text-center ma-0">Demurrage</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">X USD</p>
+          <p class=" text-center ma-0">{{item.demurrage}}</p>
         </v-col>
       </v-row>
     </v-card-text>
@@ -128,6 +128,7 @@
        
       </div>
     </v-expand-transition>
+    <v-divider></v-divider>
       <div>
         <v-card-actions>
          <v-btn block tile dark class="blue yellow--text">
