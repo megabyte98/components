@@ -363,6 +363,127 @@
   </v-card>
 
 </div>
+
+
+<!-- dialog box -->
+
+ <v-card raised outlined:loading="loading" width="1000" id="scroll-target"
+      style="max-height: 400px"
+      class="overflow-y-auto mx-auto my-12" > 
+        
+     <v-container v-scroll:#scroll-target="onScroll"
+        align="center"
+        justify="center"
+        style="height: 500px">
+      
+
+    <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="4 px-6">
+         <v-select
+          :items="items"
+          label="Start Date"
+          class="px-1"
+        ></v-select>
+        </v-col>
+        <v-col cols="4 px-6" align-center>
+           <v-select
+          :items="items"
+          label="Expiry Date"
+          class="px-1"
+        ></v-select>
+        </v-col>
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+          <v-select
+          :items="items"
+          label="Incoterms"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="6 pa-6 pb-0">
+         <p style="font-size:1rem">Terms And Conditions</p>
+        </v-col>
+        <v-col cols="6 pa-2 pb-0" align-center>
+          <v-row>
+           <v-checkbox
+      v-model="checkbox"
+      :label="`Use Standard terms and conditions`"
+    ></v-checkbox>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    <v-card-text class="py-0">
+    <v-row class="pa-0">
+    <v-col cols="12 py-0">
+        <v-textarea
+          filled
+          name="input-7-4"
+          value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. "
+         class="my-0"></v-textarea>
+      </v-col>
+    </v-row>
+    </v-card-text>
+  <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="4 px-6">
+        <v-checkbox
+      v-model="checkbox"
+      :label="`Send Email Notification`"
+    ></v-checkbox>
+        </v-col>
+        <v-col cols="4 px-6" align-center>
+          <v-checkbox
+      v-model="checkbox"
+      :label="`Generate PDF`"
+    ></v-checkbox>
+        </v-col>
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+           <v-checkbox
+      v-model="checkbox"
+      :label="`Print Schedule`"
+    ></v-checkbox>
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="4 px-6">
+        <v-switch v-model="mandatory" class="mx-2" label="Customs"></v-switch>
+        </v-col>
+        <v-col cols="4 px-6" align-center>
+         <v-switch v-model="mandatory" class="mx-2" label="Perishable"></v-switch>
+        </v-col>
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+           <v-switch v-model="mandatory" class="mx-2" label="Hazardous"></v-switch>
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text>
+
+     <v-row class="d-flex justify-end pa-6">
+        <v-card-actions>
+          <v-btn color="yellow" @click="reserve">
+         NEXT
+        </v-btn>
+         <v-btn color="green" @click="reserve">
+         DONE
+        </v-btn>
+        </v-card-actions>
+        </v-row>
+   
+     </v-container>
+  </v-card>
+
   
   </v-app>
 </template>
