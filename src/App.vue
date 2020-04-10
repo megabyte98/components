@@ -1,21 +1,22 @@
 <template>
 <v-app>
- <div class="container ma-auto d-flex" > 
-   <v-card raised outlined:loading="loading" class="mx-auto my-12" width="400"  >
-      <v-row align="left">
-        <v-col  cols="7">
-         <v-card-title>Rate Card</v-card-title>
-        </v-col>
-        <v-col cols="5">
-         <p class="text-center ma-0">Expiry Date</p>
-         <p class="text-center ma-0">DD/MM/YYYY</p>
-        </v-col>
+ <div class="container d-flex ma-auto">
+  <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450"> 
+     <v-system-bar  class="pa-6 yellow black--text">
+      <v-card-text class="pa-2 text-center"><h1>Carrier Company</h1></v-card-text>
+      <v-icon color="black" medium>mdi-pencil</v-icon>
+      <v-icon color="black" medium>mdi-delete</v-icon>
+    </v-system-bar>
+    <v-divider></v-divider>
+      <v-row>
+        <v-card-text class="text-center"><h2>LOGO</h2></v-card-text>
+        <v-card-text class="text-center pa-0" ><p class="pa-0 ma-0">expires in <span class="red--text">x days</span></p></v-card-text>
       </v-row>
-       <v-divider ></v-divider>
+    <v-divider></v-divider>
    <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">vessel name</p>
+          <p class="text--disabled text-center ma-0">Liner name</p>
         </v-col>
         <v-col cols="6 pa-1">
           <p class="text--disabled text-center ma-0">XXXXX</p>
@@ -55,7 +56,18 @@
       </v-row>
     </v-card-text>
     <v-card-actions>
-      <v-spacer></v-spacer>
+       <v-card-text class="pa-3">
+      <v-row align="center">
+        <v-col  cols="6 pa-1" class="green yellow--text" >
+          <p class="text-center ma-0"><strong>Profit</strong></p>
+          <p class="text-center ma-0">x$</p> 
+        </v-col>
+        <v-col cols="6 pa-1" class="red yellow--text">
+          <p class="text-center ma-0 "><strong>FREIGHT COST</strong></p>
+         <p class="text-center ma-0">x$</p> 
+        </v-col>
+      </v-row>
+    </v-card-text>
       <v-btn icon @click="show = !show">
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
@@ -64,16 +76,6 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        <v-card-text class="pa-0">
-      <v-row align="center">
-        <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Via ports</p>
-        </v-col>
-        <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">x ports</p>
-        </v-col>
-      </v-row>
-    </v-card-text>
  
  <v-card-text class="pa-0">
       <v-row align="center">
@@ -85,28 +87,15 @@
         </v-col>
       </v-row>
     </v-card-text>
-  
-    <v-card-text class="pa-0">
-      <v-row align="center">
-        <v-col  cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">Transit time</p>
-        </v-col>
-        <v-col cols="6 pa-1">
-          <p class="text--disabled text-center ma-0">x days</p>
-        </v-col>
-      </v-row>
-    </v-card-text>
-    
-    
-    
-    <v-card-text class="pa-0">
+     <v-card-text class="pa-0">
       <v-row align="center">
         <v-col  cols="6 pa-1" >
           <p class="text--disabled text-center ma-0">detention free</p>
           <p class="text-center ma-0">in days</p>
         </v-col>
         <v-col cols="6 pa-1">
-          <p class="text-center ma-0"><strong>FREIGHT COST</strong></p>
+          <p class="text-center ma-0">Vessel Name</p>
+          <p class="text-center ma-0">xyz</p>
         </v-col>
       </v-row>
     </v-card-text>
@@ -122,22 +111,29 @@
         </v-col>
       </v-row>
     </v-card-text>
+     <v-card-text class="pa-0">
+    <v-row align="center">
+       <v-col  cols="6 pa-1">
+         <v-card-actions>
+          <h2 class="pa-4"><v-btn class="red--text yellow">VIEW BREAKDOWN</v-btn></h2>
+         </v-card-actions>
+        </v-col>
+        <v-col cols="6 pa-1">
+          <v-card-actions class="d-flex justify-center">
+             <h2><v-btn class="red--text yellow">SCHEDULE</v-btn></h2>
+            </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text> 
        
       </div>
     </v-expand-transition>
- 
-     
- 
-
-   
       <div>
-        <v-row class="d-flex justify-center">
         <v-card-actions>
-         <v-btn color="lime accent-2" @click="reserve">
+         <v-btn block tile dark class="blue yellow--text">
         ADD TO QUOTE
         </v-btn>
         </v-card-actions>
-        </v-row>
       </div>
     </v-card>
   </div>
