@@ -1,6 +1,6 @@
 <template>
 <v-app>
- <div class="container d-flex ma-auto">
+ <!-- <div class="container d-flex ma-auto">
   <v-card raised outlined:loading="loading" class="mx-auto my-12" width="450"> 
      <v-system-bar  class="pa-6 yellow black--text">
       <v-card-text class="pa-2 text-center"><h1>Carrier Company</h1></v-card-text>
@@ -137,7 +137,7 @@
         </v-card-actions>
       </div>
     </v-card>
-  </div>
+  </div> -->
 
 <!-- add rate card -->
 <div class="text-center">
@@ -481,7 +481,111 @@
      </v-container>
   </v-card>
 
+
+<!-- 2 part -->
+
+  <v-card raised outlined:loading="loading" width="1000" id="scroll-target"
+      style="max-height: 400px"
+      class="overflow-y-auto mx-auto my-12" > 
+        
+     <v-container v-scroll:#scroll-target="onScroll"
+        align="center"
+        justify="center"
+        style="height: 500px">
+      
+
+    <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="4 px-6">
+         <v-text-field label="Customer Email"></v-text-field> 
+        </v-col>
+        <v-col cols="8">
+        <v-row>
+        <v-col cols="4 px-6" align-center>
+           <v-text-field label="First Name"></v-text-field> 
+        </v-col>
+         <v-col cols="4 pa-1">
+           <v-card-actions>
+          <v-text-field label="Last Name"></v-text-field> 
+        </v-card-actions>
+        </v-col>
+        </v-row></v-col>
+      </v-row>
+    </v-card-text>
   
+      <v-card-text class="pa-0">
+      <v-row align="center">
+       <v-col  cols="4 pa-2">
+        <v-card-actions>
+          <v-select
+          :items="items"
+          label="Country"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+       
+        </v-col>
+        <v-col cols="4 pa-2">
+       <v-card-actions>
+         <v-text-field label="Company"></v-text-field> 
+        </v-card-actions>
+        </v-col>
+         <v-col cols="4 pa-2">
+       <v-card-actions>
+         <v-text-field label="CC Emails"></v-text-field> 
+        </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-card-text><br>
+
+        <v-card-text class="pa-0">
+          <h3 class="text--disabled">Customer Address</h3>
+      <v-row align="center">
+       <v-col  cols="6 pa-2">
+        <v-card-actions>
+         <v-text-field label="Street Address"></v-text-field>
+        </v-card-actions>
+        <v-card-actions>
+         <v-text-field label="City"></v-text-field>
+        </v-card-actions>
+          <v-card-actions>
+         <v-text-field label="Postal/ZIP Code"></v-text-field>
+        </v-card-actions>
+        </v-col>
+         <v-col  cols="6 pa-2">
+        <v-card-actions>
+         <v-text-field label="Address line 2"></v-text-field>
+        </v-card-actions>
+        <v-card-actions>
+         <v-text-field label="State/Province/Region"></v-text-field>
+        </v-card-actions> <v-card-actions>
+          <v-select
+          :items="items"
+          label="Country"
+          class="px-1"
+        ></v-select>
+        </v-card-actions>
+
+        </v-col>
+      </v-row>
+    </v-card-text>
+
+     <v-row class="d-flex justify-end pa-6">
+        <v-card-actions>
+          <v-btn color="yellow" @click="reserve">
+         Genreate Quotation
+        </v-btn>
+         <v-btn color="green" @click="reserve">
+         <v-icon>mdi-eye</v-icon>Preview Quote
+        </v-btn>
+        </v-card-actions>
+        </v-row>
+   
+     </v-container>
+  </v-card>
+
+
+
   </v-app>
 </template>
 
