@@ -138,6 +138,102 @@
       </div>
     </v-card>
   </div> -->
+ 
+
+
+  <!-- strip type kuch -->
+
+<v-card  class="ma-auto" max-width="auto" raised >
+    <v-container>
+      <v-row>
+      <v-col>
+         <v-list-item single-line>
+      <v-list-item-content>
+        <v-list-item-title><v-btn inactive class="green" raised>Rates Available</v-btn></v-list-item-title>
+      </v-list-item-content>
+         </v-list-item>
+      <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Created By</v-list-item-title>
+        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+         <v-list-item single-line>
+      <v-list-item-content>
+        <v-list-item-title><h3>Enquiry ID</h3></v-list-item-title>
+      </v-list-item-content>
+         </v-list-item>
+         <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Sales Co-ordinator</v-list-item-title>
+        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+         <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Quotation No</v-list-item-title>
+        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+      </v-list-item-content>
+         </v-list-item>
+          <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Customer Company</v-list-item-title>
+        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+           <v-list-item single-line>
+      <v-list-item-content>
+        <v-list-item-title></v-list-item-title>
+      </v-list-item-content>
+         </v-list-item>
+            <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Created On</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+        <v-row>
+           <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Port Of Origin</v-list-item-title>
+        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+       <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Port Of Destination</v-list-item-title>
+        <v-list-item-subtitle>abc</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+          </v-row>
+      </v-col>
+      <v-col>
+        <v-row>
+           <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Mode</v-list-item-title>
+        <v-list-item-subtitle>Sea-FCL</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+       <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Load</v-list-item-title>
+        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+        </v-row>
+      </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
 
 <!-- add rate card -->
 <div class="text-center">
@@ -583,6 +679,11 @@
    
      </v-container>
   </v-card>
+
+
+
+
+
 
 
 
