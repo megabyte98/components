@@ -691,58 +691,58 @@
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Start Date</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.startDate}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Expiry Date</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.expiryDate}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Incoterms</v-list-item-title>
-        <v-list-item-subtitle>abc</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.incoTerms}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
     <v-row>
       <v-col cols="4"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Customs"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="customs" label="Customs"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Perishable"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="perishable" label="Perishable"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Hazardous"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="hazardous" label="Hazardous"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
     <v-row>
       <v-col cols="3"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Send Email"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="sendEmail" label="Send Email"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Generate PDF"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="generatePDF" label="Generate PDF"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Print Schedule"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="printSchedule" label="Print Schedule"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
     <v-col cols="3"><v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" label="Terms & Conditions"></v-checkbox></v-list-item-title>
+        <v-list-item-title> <v-checkbox v-model="disabled" readonly class="mx-2" :value="termsAndCondition" label="Terms & Conditions"></v-checkbox></v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -754,19 +754,19 @@
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Customer Email</v-list-item-title>
-        <v-list-item-subtitle>something@gmail.com</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.customerEmail}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>First Name</v-list-item-title>
-        <v-list-item-subtitle>Manvendra</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.firstName}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Last Name</v-list-item-title>
-        <v-list-item-subtitle>Bansal</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.lastName}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -774,19 +774,19 @@
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Country</v-list-item-title>
-        <v-list-item-subtitle>India</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.country}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Company Name</v-list-item-title>
-        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.company}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>CC Emails</v-list-item-title>
-        <v-list-item-subtitle>xyz@gmail.com</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ccEmails}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -797,13 +797,13 @@
       <v-col cols="6"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Street Address</v-list-item-title>
-        <v-list-item-subtitle>gali no 14</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.streetAddress}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="6"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>City</v-list-item-title>
-        <v-list-item-subtitle>Satna</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.city}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -811,13 +811,13 @@
       <v-col cols="6"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>State</v-list-item-title>
-        <v-list-item-subtitle>Madhya Pradesh</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.state}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="6"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Zip Code</v-list-item-title>
-        <v-list-item-subtitle>123456</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.zipCode}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -829,21 +829,19 @@
      <v-col cols="6"><v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Load Details</v-list-item-title>
-        <v-list-item-subtitle>5kg aloo</v-list-item-subtitle>
-        <v-list-item-subtitle>5kg aloo</v-list-item-subtitle>
-        <v-list-item-subtitle>5kg aloo</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.loadDetails}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
      <v-col cols="6">  <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Port Of Origin</v-list-item-title>
-        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.origin}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
        <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Port Of Destination</v-list-item-title>
-        <v-list-item-subtitle>abc</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.destination}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
