@@ -1138,8 +1138,84 @@
   <v-card-actions>
     <v-btn block class="yellow">DONE</v-btn>
   </v-card-actions>
-
 </v-card>
+
+
+<v-card  class="ma-auto my-12" max-width="auto" raised >
+    <v-container>
+     <v-card-text>
+      <v-row>
+        <h3>Quotation Number : </h3>
+      </v-row>
+       </v-card-text>
+      <v-row>
+      <v-col>
+         <v-list-item single-line>
+      <v-list-item-content>
+        <v-list-item-title>Sales Person</v-list-item-title>
+        <v-list-item-subtitle>Manvendra Bansal</v-list-item-subtitle>
+      </v-list-item-content></v-list-item>
+      </v-col>
+      <v-col>
+         <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Created On</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+    <v-col>
+          <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Customer</v-list-item-title>
+        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+            <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Expires On</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+      </v-col>
+      <v-col>
+        <v-row>
+           <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Port Of Origin</v-list-item-title>
+        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+       <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Port Of Destination</v-list-item-title>
+        <v-list-item-subtitle>abc</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+          </v-row>
+      </v-col>
+      <v-col>
+        <v-row>
+           <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Mode</v-list-item-title>
+        <v-list-item-subtitle>Sea-FCL</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+       <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Load</v-list-item-title>
+        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+        </v-row>
+      </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
+
 
   </v-app>
 </template>
