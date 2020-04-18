@@ -684,7 +684,7 @@
 <!-- quotation review -->
 
 
-  <v-card class="mx-auto" raised width="1250">
+  <!-- <v-card class="mx-auto" raised width="1250">
   <v-card-title><h2>QUOTATION REVIEW</h2></v-card-title>
   <v-card-text>
     <v-row>
@@ -853,11 +853,293 @@
      
     </v-row>
   </v-card-text>
-  </v-card>
+  </v-card> -->
 
 
+<v-card class="mx-auto my-12" raised max-width="auto">
+  <v-card-text class="text-center pa-5"><h1>FCL</h1></v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>ENQUIRY ID : </h3>
+    <v-row>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Origin</v-list-item-title>
+        <v-list-item-subtitle>Delhi</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Destination</v-list-item-title>
+        <v-list-item-subtitle>Bengaluru</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>No Of Containers</v-list-item-title>
+        <v-list-item-subtitle>x</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+    <v-row>
+         <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Cargo Ready Date</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Created At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Updated At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>LOAD DETAILS</h3>
+    <v-row>
+          <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>20GP</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>40GP</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>20TC</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+     <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>40TC</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+    <v-row>
+           <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>20RE</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>40RE</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>20HC</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+     <v-col cols="3"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>40HC</v-list-item-title>
+        <v-list-item-subtitle></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-actions>
+    <v-btn block class="yellow">DONE</v-btn>
+  </v-card-actions>
+
+</v-card>
 
 
+<v-card class="mx-auto my-12" raised max-width="auto">
+  <v-card-text class="text-center pa-5"><h1>LCL</h1></v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>ENQUIRY ID : </h3>
+    <v-row>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Origin</v-list-item-title>
+        <v-list-item-subtitle>Delhi</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Destination</v-list-item-title>
+        <v-list-item-subtitle>Bengaluru</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>No Of Packages</v-list-item-title>
+        <v-list-item-subtitle>x</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+    <v-row>
+         <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Cargo Ready Date</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Created At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Updated At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>LOAD DETAILS</h3>
+    <v-row>
+          <v-col cols="6"> <v-list-item three-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Weight</h4></v-list-item-title>
+        <v-list-item-title>Value :</v-list-item-title>
+        <v-list-item-title>Unit :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="6"> <v-list-item three-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Volume</h4></v-list-item-title>
+       <v-list-item-title>Value :</v-list-item-title>
+       <v-list-item-title>Unit :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-actions>
+    <v-btn block class="yellow">DONE</v-btn>
+  </v-card-actions>
+
+</v-card>
+
+<v-card class="mx-auto my-12" raised max-width="auto">
+  <v-card-text class="text-center pa-5"><h1>AIR</h1></v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>ENQUIRY ID : </h3>
+    <v-row>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Origin</v-list-item-title>
+        <v-list-item-subtitle>Delhi</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Destination</v-list-item-title>
+        <v-list-item-subtitle>Bengaluru</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Goods Type</v-list-item-title>
+        <v-list-item-subtitle>adsa</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+    <v-row>
+         <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Shipment Date</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Created At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title>Updated At</v-list-item-title>
+        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-text>
+    <h3>CARGO DETAILS</h3>
+    <v-row>
+          <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Weight</h4></v-list-item-title>
+        <v-list-item-title>Value :</v-list-item-title> 
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Quantity</h4></v-list-item-title>
+       <v-list-item-title>Value :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+     <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Weight Type</h4></v-list-item-title>
+       <v-list-item-title>Value :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+       <v-row>
+          <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Length</h4></v-list-item-title>
+        <v-list-item-title>Value :</v-list-item-title> 
+      </v-list-item-content>
+    </v-list-item></v-col>
+      <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Breadth</h4></v-list-item-title>
+       <v-list-item-title>Value :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+     <v-col cols="4"> <v-list-item two-line>
+       <v-list-item-content>
+        <v-list-item-title><h4>Height</h4></v-list-item-title>
+       <v-list-item-title>Value :</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item></v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="4"><v-checkbox v-model="disabled" readonly class="mx-2"  label="Turnable"></v-checkbox></v-col>
+      <v-col cols="4"><v-checkbox v-model="disabled" readonly class="mx-2"  label="Stackable"></v-checkbox></v-col>
+      <v-col cols="4"><v-checkbox v-model="disabled" readonly class="mx-2"  label="Screened"></v-checkbox></v-col>
+    </v-row>
+  </v-card-text>
+  <v-divider></v-divider>
+  <v-card-actions>
+    <v-btn block class="yellow">DONE</v-btn>
+  </v-card-actions>
+
+</v-card>
 
   </v-app>
 </template>
