@@ -149,26 +149,26 @@
       <v-col>
          <v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title><v-btn inactive class="green" raised>Rates Available</v-btn></v-list-item-title>
+        <v-list-item-title></v-list-item-title>
       </v-list-item-content>
          </v-list-item>
       <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Created By</v-list-item-title>
-        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.createdBy}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
       </v-col>
       <v-col>
          <v-list-item single-line>
       <v-list-item-content>
-        <v-list-item-title><h3>Enquiry ID</h3></v-list-item-title>
+        <v-list-item-title><h3>Enquiry ID: {{item.enquiryId}}</h3></v-list-item-title>
       </v-list-item-content>
          </v-list-item>
          <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Sales Co-ordinator</v-list-item-title>
-        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.sales}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
       </v-col>
@@ -176,13 +176,13 @@
          <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Quotation No</v-list-item-title>
-        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.quotationId}}</v-list-item-subtitle>
       </v-list-item-content>
          </v-list-item>
           <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Customer Company</v-list-item-title>
-        <v-list-item-subtitle>N/A</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.customerCompany}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
       </v-col>
@@ -195,7 +195,7 @@
             <v-list-item two-line>
       <v-list-item-content>
         <v-list-item-title>Created On</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.createdon}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
       </v-col>
@@ -204,13 +204,13 @@
            <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Port Of Origin</v-list-item-title>
-        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.origin}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
        <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Port Of Destination</v-list-item-title>
-        <v-list-item-subtitle>abc</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.destination}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
           </v-row>
@@ -220,13 +220,13 @@
            <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Mode</v-list-item-title>
-        <v-list-item-subtitle>Sea-FCL</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.mode}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
        <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Load</v-list-item-title>
-        <v-list-item-subtitle>xyz</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.loadDetails}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
         </v-row>
@@ -860,24 +860,18 @@
   <v-card-text class="text-center pa-5"><h1>FCL</h1></v-card-text>
   <v-divider></v-divider>
   <v-card-text>
-    <h3>ENQUIRY ID : </h3>
+    <h3>ENQUIRY ID : {{item.enquiryId}}</h3>
     <v-row>
-      <v-col cols="4"> <v-list-item two-line>
+      <v-col cols="6"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Origin</v-list-item-title>
-        <v-list-item-subtitle>Delhi</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.origin}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
-      <v-col cols="4"> <v-list-item two-line>
+      <v-col cols="6"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Destination</v-list-item-title>
-        <v-list-item-subtitle>Bengaluru</v-list-item-subtitle>
-      </v-list-item-content>
-    </v-list-item></v-col>
-      <v-col cols="4"> <v-list-item two-line>
-       <v-list-item-content>
-        <v-list-item-title>No Of Containers</v-list-item-title>
-        <v-list-item-subtitle>x</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.destination}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -885,19 +879,19 @@
          <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Cargo Ready Date</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.cargoReadyDate}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Created At</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.createdAt}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Updated At</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.updatedAt}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -909,25 +903,25 @@
           <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>20GP</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld20GP}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>40GP</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld40GP}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>20TC</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld20TC}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
      <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>40TC</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld40TC}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -935,25 +929,25 @@
            <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>20RE</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld20RE}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>40RE</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld40RE}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>20HC</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld20HC}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
      <v-col cols="3"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>40HC</v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.ld40HC}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -970,24 +964,18 @@
   <v-card-text class="text-center pa-5"><h1>LCL</h1></v-card-text>
   <v-divider></v-divider>
   <v-card-text>
-    <h3>ENQUIRY ID : </h3>
+    <h3>ENQUIRY ID : {{item.enquiryId}}</h3>
     <v-row>
-      <v-col cols="4"> <v-list-item two-line>
+      <v-col cols="6"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Origin</v-list-item-title>
-        <v-list-item-subtitle>Delhi</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.origin}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
-      <v-col cols="4"> <v-list-item two-line>
+      <v-col cols="6"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Destination</v-list-item-title>
-        <v-list-item-subtitle>Bengaluru</v-list-item-subtitle>
-      </v-list-item-content>
-    </v-list-item></v-col>
-      <v-col cols="4"> <v-list-item two-line>
-       <v-list-item-content>
-        <v-list-item-title>No Of Packages</v-list-item-title>
-        <v-list-item-subtitle>x</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.destination}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -995,19 +983,19 @@
          <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Cargo Ready Date</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.cargoReadyDate}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Created At</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.createdAt}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="4"> <v-list-item two-line>
        <v-list-item-content>
         <v-list-item-title>Updated At</v-list-item-title>
-        <v-list-item-subtitle>DD/MM/YYYY</v-list-item-subtitle>
+        <v-list-item-subtitle>{{item.updatedAt}}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
@@ -1019,15 +1007,15 @@
           <v-col cols="6"> <v-list-item three-line>
        <v-list-item-content>
         <v-list-item-title><h4>Weight</h4></v-list-item-title>
-        <v-list-item-title>Value :</v-list-item-title>
-        <v-list-item-title>Unit :</v-list-item-title>
+        <v-list-item-title>Value :{{item.weight.value}}</v-list-item-title>
+        <v-list-item-title>Unit :{{item.weight.unit}}</v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
       <v-col cols="6"> <v-list-item three-line>
        <v-list-item-content>
         <v-list-item-title><h4>Volume</h4></v-list-item-title>
-       <v-list-item-title>Value :</v-list-item-title>
-       <v-list-item-title>Unit :</v-list-item-title>
+       <v-list-item-title>Value :{{item.volume.value}}</v-list-item-title>
+       <v-list-item-title>Unit :{{item.volume.unit}}</v-list-item-title>
       </v-list-item-content>
     </v-list-item></v-col>
     </v-row>
