@@ -143,7 +143,7 @@
 
   <!-- strip type kuch -->
 
-<v-card  class="ma-auto" max-width="auto" raised >
+<!-- <v-card  class="ma-auto" max-width="auto" raised >
     <v-container>
       <v-row>
       <v-col>
@@ -233,7 +233,7 @@
       </v-col>
       </v-row>
     </v-container>
-  </v-card>
+  </v-card> -->
 
 <!-- add rate card -->
 <div class="text-center">
@@ -854,7 +854,7 @@
     </v-row>
   </v-card-text>
   </v-card> -->
-
+<!-- 
 
 <v-card class="mx-auto my-12" raised max-width="auto">
   <v-card-text class="text-center pa-5"><h1>FCL</h1></v-card-text>
@@ -1023,9 +1023,9 @@
   <v-divider></v-divider>
   <v-card-actions>
     <v-btn block class="yellow">DONE</v-btn>
-  </v-card-actions>
+  </v-card-actions> -->
 
-</v-card>
+<!-- </v-card> -->
 
 <v-card class="mx-auto my-12" raised max-width="auto">
   <v-card-text class="text-center pa-5"><h1>AIR</h1></v-card-text>
@@ -1203,6 +1203,56 @@
       </v-row>
     </v-container>
   </v-card>
+
+<v-container>
+<v-card raised class="my-12 mx-auto" max-width="auto">
+  <v-card-text>
+    <v-row>
+      <v-col cols="2">Enquiry ID<br>xxxxxxxx</v-col>
+     <v-col cols="2"></v-col>
+     <v-col cols="2">Quotation No<br>xxxxxxxxx</v-col>
+     <v-col cols="2"></v-col>
+     <v-col cols="2">Origin<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Mode<br>xxxxxxxxx</v-col>
+    </v-row>
+    <v-row>
+     <v-col cols="2">Created By<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Sales Person<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Customer Company<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Created On<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Destination<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Load Details<br>xxxxxxxxx</v-col>
+    </v-row>  
+  </v-card-text> 
+
+</v-card>
+</v-container>
+
+
+
+<v-container>
+<v-card raised class="my-12 mx-auto" max-width="auto">
+  <v-card-text>
+    <v-row>
+      <v-col cols="2">Quotation No<br>xxxxxxxx</v-col>
+     <v-col cols="2"></v-col>
+     <v-col cols="2"><br></v-col>
+     <v-col cols="2"></v-col>
+     <v-col cols="2">Origin<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Mode<br>xxxxxxxxx</v-col>
+    </v-row>
+    <v-row>
+     <v-col cols="2">Sales Person<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Created On<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Customer<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Created By<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Destination<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Load Details<br>xxxxxxxxx</v-col>
+    </v-row>  
+  </v-card-text> 
+
+</v-card>
+</v-container>
 
 
   </v-app>
