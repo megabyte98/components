@@ -1208,20 +1208,20 @@
 <v-card raised class="my-12 mx-auto" max-width="auto">
   <v-card-text>
     <v-row>
-      <v-col cols="2">Enquiry ID<br>xxxxxxxx</v-col>
+      <v-col cols="2">Enquiry ID<br>{{item.enquiryId}}</v-col>
      <v-col cols="2"></v-col>
-     <v-col cols="2">Quotation No<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Quotation No<br>{{item.quotationId}}</v-col>
      <v-col cols="2"></v-col>
-     <v-col cols="2">Origin<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Mode<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Origin<br>{{item.origin}}</v-col>
+     <v-col cols="2">Mode<br>{{item.mode}}</v-col>
     </v-row>
     <v-row>
-     <v-col cols="2">Created By<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Sales Person<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Customer Company<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Created On<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Destination<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Load Details<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Created By<br>{{item.createdBy}}</v-col>
+     <v-col cols="2">Sales Person<br>{{item.sales}}</v-col>
+     <v-col cols="2">Customer Company<br>{{item.customerCompany}}</v-col>
+     <v-col cols="2">Created On<br>{{item.createdAt}}</v-col>
+     <v-col cols="2">Destination<br>{{item.destination}}</v-col>
+     <v-col cols="2">Load Details<br>{{item.loadDetails}}</v-col>
     </v-row>  
   </v-card-text> 
 
@@ -1234,20 +1234,20 @@
 <v-card raised class="my-12 mx-auto" max-width="auto">
   <v-card-text>
     <v-row>
-      <v-col cols="2">Quotation No<br>xxxxxxxx</v-col>
+      <v-col cols="2">Quotation No<br>{{item.quotationId}}</v-col>
      <v-col cols="2"></v-col>
      <v-col cols="2"><br></v-col>
      <v-col cols="2"></v-col>
-     <v-col cols="2">Origin<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Mode<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Origin<br>{{item.origin}}</v-col>
+     <v-col cols="2">Mode<br>{{item.mode}}</v-col>
     </v-row>
     <v-row>
      <v-col cols="2">Sales Person<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Created On<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Customer<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Created By<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Destination<br>xxxxxxxxx</v-col>
-     <v-col cols="2">Load Details<br>xxxxxxxxx</v-col>
+     <v-col cols="2">Created On<br>{{item.createdAt}}</v-col>
+     <v-col cols="2">Customer<br>{{item.customer}}</v-col>
+     <v-col cols="2">Created By<br>{{item.createdBy}}</v-col>
+     <v-col cols="2">Destination<br>{{item.destination}}</v-col>
+     <v-col cols="2">Load Details<br>{{item.loadDetails}}</v-col>
     </v-row>  
   </v-card-text> 
 
