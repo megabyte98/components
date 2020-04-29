@@ -1204,7 +1204,7 @@
     </v-container>
   </v-card>
 
-<v-container>
+<!-- <v-container>
 <v-card raised class="my-12 mx-auto" max-width="auto">
   <v-card-text>
     <v-row>
@@ -1251,9 +1251,142 @@
     </v-row>  
   </v-card-text> 
 
+</v-card> -->
+<!-- </v-container> -->
+
+<v-row>
+
+<v-card raised class="my-12 mx-auto">
+  <v-card-text>
+      <v-card-text class="text-center py-0"><h2>SHIPPER</h2></v-card-text>
+       <v-card-text class="text-center py-0"><p>Enter the following details to add shipper</p></v-card-text>
+  <v-divider></v-divider>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Name:" placeholder="(Enter Name)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Company:" placeholder="(Enter Company Name)" ></v-text-field></v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Email:" placeholder="(Enter Email)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Phone:" placeholder="(Enter Phone Number)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Address:" placeholder="(Enter Address)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-btn>Done</v-btn>
+  </v-card-text>
+</v-card>
+
+
+
+<v-card raised class="my-12 mx-auto">
+  <v-card-text>
+      <v-card-text class="text-center py-0"><h2>NOTIFY PARTY</h2></v-card-text>
+       <v-card-text class="text-center py-0"><p>Enter the following details to add shipper</p></v-card-text>
+  <v-divider></v-divider>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Name:" placeholder="(Enter Name)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Company:" placeholder="(Enter Company Name)" ></v-text-field></v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Email:" placeholder="(Enter Email)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Phone:" placeholder="(Enter Phone Number)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Address:" placeholder="(Enter Address)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-btn>Done</v-btn>
+  </v-card-text>
+</v-card>
+
+
+<v-card raised class="my-12 mx-auto">
+  <v-card-text>
+      <v-card-text class="text-center py-0"><h2>CONSIGNEE</h2></v-card-text>
+       <v-card-text class="text-center py-0"><p>Enter the following details to add shipper</p></v-card-text>
+  <v-divider></v-divider>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Name:" placeholder="(Enter Name)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Company:" placeholder="(Enter Company Name)" ></v-text-field></v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Email:" placeholder="(Enter Email)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Phone:" placeholder="(Enter Phone Number)" ></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-row>
+      <v-card-actions>
+       <v-text-field class="pr-5" label="Address:" placeholder="(Enter Address)"></v-text-field>
+      </v-card-actions>
+    </v-row>
+    <v-btn>Done</v-btn>
+  </v-card-text>
+</v-card>
+</v-row>
+
+<v-container>
+<v-card raised class="my-12 mx-auto" max-width="auto">
+<v-card-text><v-row>
+  <v-col cols="3"><h3>SHIPMENT DETAILS</h3></v-col>
+  <v-col cols="9"><span>SEA-FCL</span></v-col> 
+  </v-row>
+  </v-card-text>
+<v-divider></v-divider>
+<v-card-text>
+  <v-row>
+    <v-col cols="3"><strong>Carrier Name</strong></v-col>
+    <v-col cols="3"><strong>Origin</strong></v-col>
+    <v-col cols="3"><strong>Destination</strong></v-col>
+    <v-col cols="3"><strong>Via</strong><br>xxxxx</v-col>
+  </v-row>
+   <v-row>
+    <v-col cols="3"></v-col>
+    <v-col cols="3">xyz</v-col>
+    <v-col cols="3">abc</v-col>
+    <v-col cols="3"><strong>takes</strong><br>xxxx</v-col>
+  </v-row>
+  <v-row>
+    <v-col cols="9"><strong>Load Details</strong></v-col>
+    <v-col cols="3"><v-btn>Edit Load details</v-btn></v-col>
+  </v-row>
+</v-card-text>
 </v-card>
 </v-container>
-
 
   </v-app>
 </template>
